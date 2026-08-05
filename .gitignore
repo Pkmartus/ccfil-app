@@ -38,6 +38,7 @@ yarn-error.log*
 next-env.d.ts
 
 sendgrid.env
+ui-components
 
 #amplify-do-not-edit-begin\
 .amplify
@@ -61,3 +62,12 @@ amplifytools.xcconfig
 .secret-*
 **.sample
 #amplify-do-not-edit-end
+
+#migration tests and docs
+cdk-storage.json
+deployed-storage.json
+policy-amplify-dymon2l90oqk2-gen-ccfilappstorage4da250381-6po3hqxqbf7d.json
+policy-ccfil-app-storage-4da25038161600-staging.json
+staging-bucket-policy.json
+post-push-storage.json
+gen1-to-gen2-migration-runbook.md

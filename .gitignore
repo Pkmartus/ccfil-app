@@ -29,22 +29,35 @@ yarn-error.log*
 next-env.d.ts
 sendgrid.env
 ui-components
-gen1-to-gen2-migration-runbook.md
-# amplify
-.amplify
-amplify_outputs*
-amplify_outputs.json
-amplifyconfiguration*
-aws-exports*
-dist
-# gen1 CLI local state (leaks in if `dev` is checked out in this worktree)
-/amplify/backend/
-/amplify/.config/
-/amplify/#current-cloud-backend/
 
+#amplify-do-not-edit-begin\
+.amplify
+amplify/\#current-cloud-backend
+amplify/.config/local-*
+amplify/logs
+amplify/mock-data
+amplify/mock-api-resources
+amplify/backend/amplify-meta.json
+amplify/backend/.temp
+build/
+dist/
+node_modules/
+aws-exports.js
+awsconfiguration.json
+amplifyconfiguration.json
+amplifyconfiguration.dart
+amplify-build-config.json
+amplify-gradle-config.json
+amplifytools.xcconfig
+.secret-*
+**.sample
+#amplify-do-not-edit-end
+
+#migration tests and docs
 cdk-storage.json
 deployed-storage.json
 policy-amplify-dymon2l90oqk2-gen-ccfilappstorage4da250381-6po3hqxqbf7d.json
 policy-ccfil-app-storage-4da25038161600-staging.json
 staging-bucket-policy.json
 post-push-storage.json
+gen1-to-gen2-migration-runbook.md

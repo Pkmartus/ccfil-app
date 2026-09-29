@@ -19,8 +19,8 @@ const pathname = usePathname();
             <div className={`carousel top-0 flex-auto w-full overflow-hidden`}>
                 {carouselSlides.map((carouselSlide, index)=>{
                     return (
-                        <div key={index} className={index == current ? `carouselCard carouselCard-active overflow-hidden`: `carouselCard`}>
-                            <ImageHandler key={index} src={carouselSlide.src} width={2550} height={1440} className={`${position === "fixed" ? "fixed h-full ":"md:min-h-[640px] md:max-h-[640px]"} bg-transparent min-h-screen object-cover object-center justify-center ${pathname === '/' ? "hidden":""} md:flex `} alt="bg image" priority/>
+                        <div key={index} className={index == current ? `carouselCard carouselCard-active w-full overflow-hidden`: `carouselCard w-full`}>
+                            <ImageHandler key={index} src={carouselSlide.src} width={2550} height={1440} className={`${position === "fixed" ? "fixed h-full ":"md:min-h-[640px] md:max-h-[640px]"} w-full bg-transparent min-h-screen object-cover object-center justify-center ${pathname === '/' ? "hidden":""} md:flex `} alt="bg image" priority/>
                         </div>
                     )
                 })}

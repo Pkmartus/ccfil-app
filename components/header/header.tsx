@@ -19,7 +19,7 @@ export default function NavHeader({ description, title, bgimage}: {description: 
   }
   useOnClickOutside(Navref, handleNavClickOutside)
    return(
-      <div className="flex z-70 md:justify-center top-0 overflow-hidden max-w-full">
+      <div className="flex z-90 md:justify-center top-0 overflow-hidden max-w-full">
         <div className="flex absolute w-full justify-center">
           {pathname != '/' ? 
             <div className={`absolute top-0 w-full`}>
@@ -29,14 +29,12 @@ export default function NavHeader({ description, title, bgimage}: {description: 
             <HeaderBGCarousel carouselSlides={carouselSlides} position="relative"/>}
         </div>
         <div className={`flex flex-col md:px-16 md:py-4 items-stretch bg-white bg-opacity-25 md:bg-opacity-75 w-full md:w-5/6 z-10 md:my-12 ${pathname == '/' ? 'md:min-h-[550px]' : ''}`}>
-          <div className={`relative flex flex-row-reverse md:flex-row md:justify-between w-full`}>
-            <Link href="/">
-              <div className={`absolute lg:hidden md:flex w-[34px] h-[39px] left-0 mr-5 ml-5 mt-2`}>
+          <div className={`relative flex flex-row justify-between w-full`}>
+            <Link href="/" className="shrink-0">
+              <div className={`relative flex nav:hidden shrink-0 w-[34px] h-[39px] mr-5 ml-5 mt-2`}>
               <ImageHandler src="public/Logos/min-logo.svg" alt="CCFIL logo" fill priority/>
             </div>
-            </Link>
-            <Link href="/">
-            <div className={`absolute left-0 lg:visible hidden lg:flex w-[225px] h-[58px] justify-center`}>
+            <div className={`relative hidden nav:flex shrink-0 w-[225px] h-[58px] justify-center`}>
               <ImageHandler src="public/Logos/main-logo.svg" alt="CCFIL logo" fill priority/>
             </div>
             </Link>

@@ -61,3 +61,7 @@ policy-ccfil-app-storage-4da25038161600-staging.json
 staging-bucket-policy.json
 post-push-storage.json
 gen1-to-gen2-migration-runbook.md
+
+# Amplify Gen 2
+amplify_outputs*
+.amplify

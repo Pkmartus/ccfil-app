@@ -23,8 +23,8 @@ export default function QuoteSection({id, quote, quoteName, quoteImgSrc}:{id, qu
             opacity: isInView ? 1 : 0,
             transition: "all 0.5s cubic-bezier(0.01, 0, 0, 1) 0s"
           }}
-        className="fixed top-0 left-0 md:min-w-screen w-full z-0">
-            <ImageHandler src={quoteImgSrc} width={2560} height={1440} alt="background image of smiling people" className="min-h-screen aspect-[16/9] object-cover "/>
+        className="fixed inset-0 z-0">
+            <ImageHandler src={quoteImgSrc} width={2560} height={1440} alt="background image of smiling people" className="w-full h-full object-cover"/>
         </motion.div>
                 <div className="flex flex-col max-w-6xl bg-transparent mx-auto z-1 justify-center m-10" ref={sectionRef}>
                     <h4 className="text-6xl md:text-[150px] font-bold text-white text-right rotate-180 md:-mt-20">&quot;</h4>

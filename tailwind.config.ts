@@ -839,7 +839,8 @@ const config: Config = {
     screens: {
       sm: '380px',
       md: '440px',
-      lg: '728px',
+      lg: '1024px ',
+      nav: '1024px',
       xl: '1280px',
       '2xl': '1536px',
       '3xl': '1920px',

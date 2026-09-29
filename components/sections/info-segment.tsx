@@ -39,9 +39,9 @@ export default function InfoSegment({headerText, bodyText, Type, infoImage, Butt
 
 export function StickyInfoSegment({bgcolor, children, captionText, type, id}){
     return(
-        <Section initial={false} useOnce id={id} className={`z-99`}>
+        <Section initial={false} useOnce id={id} className={`z-50`}>
         <div className={`flex w-full ${bgcolor} z-70`}>
-        <div className={`relative flex flex-col ${type == "A" ? "lg:flex-row" : "lg:flex-row-reverse"} max-w-6xl py-16 px-3 gap-10 mx-auto justify-center`}>
+        <div className={`relative flex flex-col min-w-0 ${type == "A" ? "lg:flex-row" : "lg:flex-row-reverse"} max-w-6xl py-16 px-3 gap-10 mx-auto justify-center`}>
             <div className="z-40 flex items-center lg:w-1/3 border-[10px] border-blue2 md:p-10 lg:sticky md:top-4 mb-auto w-[300px] h-[450px] justify-center mx-auto">
                 <h2 className="text-blue1 font-black text-4xl flex flex-shrink relative px-3 md:px-0">
                     {captionText}

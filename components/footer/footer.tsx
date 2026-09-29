@@ -120,7 +120,7 @@ export default function Footer() {
             </div>
           </div>
           <p className="text-center font-mono text-xs text-white pt-16">
-            ©Copyright 2023 Community Connections. All Rights Reserved.{" "}
+            ©Copyright {new Date().getFullYear()} Community Connections. All Rights Reserved.{" "}
             <Link href="/privacy-policy" className="hover:animate-pulse hover:underline">
               Privacy Policy
             </Link>{" "}
